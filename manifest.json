@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Doomless IG",
+  "version": "1.0",
+
+  "description": "Prevents the load of instagram's homepage, explore, reels and all tabs that I consider prone to doomscrolling.",
+
+  "icons": {
+    "48": "icons/doom-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.instagram.com/*"],
+      "js": ["doomless-ig.js"]
+    }
+  ]
+}
